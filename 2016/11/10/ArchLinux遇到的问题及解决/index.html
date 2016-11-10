@@ -90,7 +90,7 @@
 <meta property="og:url" content="https://dalbaragi.site/2016/11/10/ArchLinux遇到的问题及解决/index.html">
 <meta property="og:site_name" content="Dalbaragi Notes">
 <meta property="og:description" content="无法调整亮度一次更新后键盘及XFCE界面都无法调节屏幕亮度。后发现是因为xbacklight只调节/sys/class/backlight/intel_backlight中的brghtness文件，但是真正起作用的是/sys/class/backlight/acpi_video0/brghtness文件。之后根据xbacklight中的说明，如下建立修改了/etc/X11/xorg.conf文件，">
-<meta property="og:updated_time" content="2016-11-10T10:17:51.847Z">
+<meta property="og:updated_time" content="2016-11-10T10:19:10.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ArchLinux遇到的问题及解决">
 <meta name="twitter:description" content="无法调整亮度一次更新后键盘及XFCE界面都无法调节屏幕亮度。后发现是因为xbacklight只调节/sys/class/backlight/intel_backlight中的brghtness文件，但是真正起作用的是/sys/class/backlight/acpi_video0/brghtness文件。之后根据xbacklight中的说明，如下建立修改了/etc/X11/xorg.conf文件，">
@@ -291,7 +291,7 @@
 
       
         <h2 id="无法调整亮度"><a href="#无法调整亮度" class="headerlink" title="无法调整亮度"></a>无法调整亮度</h2><p>一次更新后键盘及XFCE界面都无法调节屏幕亮度。后发现是因为<code>xbacklight</code>只调节<code>/sys/class/backlight/intel_backlight</code>中的<code>brghtness</code>文件，但是真正起作用的是<code>/sys/class/backlight/acpi_video0/brghtness</code>文件。之后根据<a href="https://wiki.archlinux.org/index.php/backlight#xbacklight" target="_blank" rel="external">xbacklight</a>中的说明，如下建立修改了<code>/etc/X11/xorg.conf</code>文件，重启后可以正常改变亮度。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Section &quot;Device&quot;</div><div class="line">    Identifier  &quot;Card0&quot;</div><div class="line">    Driver      &quot;intel&quot;</div><div class="line">    Option      &quot;Backlight&quot;  &quot;intel_backlight&quot;</div><div class="line">EndSection</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Section &quot;Device&quot;</div><div class="line">    Identifier  &quot;Card0&quot;</div><div class="line">    Driver      &quot;intel&quot;</div><div class="line">    Option      &quot;Backlight&quot;  &quot;acpi_video0&quot;</div><div class="line">EndSection</div></pre></td></tr></table></figure>
 <a id="more"></a>
 
       
