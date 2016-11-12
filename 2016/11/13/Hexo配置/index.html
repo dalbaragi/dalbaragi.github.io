@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo配置," />
+  <meta name="keywords" content="Hexo," />
 
 
 
@@ -98,7 +98,7 @@ npm WARN optional Skipping faile">
 $ sudo npm install -g hexo-cli
 安装过程中出现下面的警告，原因还不清楚。
 npm WARN optional Skipping faile">
-<meta property="og:updated_time" content="2016-11-12T16:37:43.806Z">
+<meta property="og:updated_time" content="2016-11-12T17:19:47.661Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo配置">
 <meta name="twitter:description" content="Hexo安装配置安装环境OS: Arch Linux Kernel: x86_64 Linux 4.8.4-1-ARCH nodejs: 6.9.1-1 npm: 3.10.9-1 git: 2.10.1-1
@@ -186,6 +186,16 @@ npm WARN optional Skipping faile">
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -261,6 +271,25 @@ npm WARN optional Skipping faile">
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -288,6 +317,7 @@ npm WARN optional Skipping faile">
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo npm install -g hexo-cli</div></pre></td></tr></table></figure>
 <p>安装过程中出现下面的警告，原因还不清楚。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm WARN optional Skipping failed optional dependency /hexo-cli/chokidar/fsevents:</div><div class="line">npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.0.15</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><p>Hexo安装好后，执行下列命令在指定文件夹中新建需要的文件，这里使用的目录是<code>～/blog</code>。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ hexo init ~/blog</div><div class="line">$ cd ~/blog</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
 <p>执行<code>$ hexo init ~/blog</code>后出现下列警告，原因还不清楚。</p>
@@ -408,6 +438,13 @@ npm WARN optional Skipping faile">
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install --save hexo-admin</div></pre></td></tr></table></figure>
 <p>启用hexo-admin</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo server -d</div><div class="line">open http://localhost:4000/admin/</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/jaredly/hexo-admin/issues/70" target="_blank" rel="external">配置<code>Deploy</code>功能</a></p>
+<p>在Hexo根目录下建立脚本文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ touch hexo-deploy.sh</div><div class="line">$ chmod a+x hexo-deploy.sh</div></pre></td></tr></table></figure>
+<p>在<code>hexo-deploy.sh</code>中添加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">#!/usr/bin/env sh</div><div class="line">hexo g -d   #generate and deploy</div></pre></td></tr></table></figure>
+<p>在<code>_config.yml</code>文件中添加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">admin:</div><div class="line">  deployCommand: &apos;./hexo-deploy.sh&apos;</div></pre></td></tr></table></figure>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo官网</a></p>
 
       
@@ -430,7 +467,7 @@ npm WARN optional Skipping faile">
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo配置/" rel="tag">#Hexo配置</a>
+            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
           
         </div>
       
@@ -520,17 +557,17 @@ npm WARN optional Skipping faile">
 
           
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories">
                 <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
