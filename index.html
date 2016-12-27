@@ -241,6 +241,123 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/27/Linux定义命令的别名/" itemprop="url">
+                  Linux定义命令的别名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-27T10:41:52+08:00" content="2016-12-27">
+              2016-12-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="定义临时别名"><a href="#定义临时别名" class="headerlink" title="定义临时别名"></a>定义临时别名</h3><p>下列指令可以定义临时别名，终端关闭后失效。<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ alias 别名=&apos;指令&apos;</div></pre></td></tr></table></figure></p>
+<p>也可以删除定义的别名。<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ unalias 别名</div></pre></td></tr></table></figure></p>
+<h3 id="永久定义别名"><a href="#永久定义别名" class="headerlink" title="永久定义别名"></a>永久定义别名</h3><p>通过在配置文件中写入，可永久定义此别名。一般情况下，通过修改’~/.bashrc’，因为我的系统使用了zsh，所以需要修改‘~/.zshrc’。<br>在文件中添加列语句。<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">alias 别名=&apos;指令&apos;</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  
+    
+        
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/27/vps上建立ss服务器/" itemprop="url">
                   vps上建立ss服务器
                 </a>
@@ -422,10 +539,14 @@
 
       
         
-          
-            <h3 id="退出无响应的ssh链接"><a href="#退出无响应的ssh链接" class="headerlink" title="退出无响应的ssh链接"></a>退出无响应的ssh链接</h3><p>在没退出的ssh会话中用<code>~.</code>断开连接。</p>
-
-          
+          <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a><br><a href="http://www.vpsee.com/2013/08/how-to-kill-an-unresponsive-ssh-connection/">如何的退出无响应的 SSH 连接</a><br><a href="https://www.coder4.com/archives/3751">解决SSH自动断线，无响应的问题</a></p>
+<h3 id="建立ssh链接"><a href="#建立ssh链接" class="headerlink" title="建立ssh链接"></a>建立ssh链接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ ssh -p 2222 user@host</div></pre></td></tr></table></figure>
+<p>端口号、用户名、主机地址根据需要自行填写。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/27/ssh使用相关/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1340,7 +1461,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1348,7 +1469,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1357,7 +1478,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
