@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="ss,vps," />
 
 
 
@@ -84,31 +84,19 @@
 
 
 
-<meta name="description" content="通过hexo deploy部署到GitHub时，只会将public文件夹中生成的html文件上传至GitHub仓库，并不会备份配置文件、markdown文件等。下面的工作是为了将Hexo文件夹整个备份到GitHub中。
-
-参考备份 Hexo 源文件至 GitHub
-前提已经将hexo部署到了dalbragi.github.io。
-步骤初始化git在Hexo根目录下执行
-git init">
+<meta name="description" content="参考[在VPS上搭建shadowsocks来科学上网](http://www.waynechu.cn/shadowsocks/2016/08/14/%E5%9C%A8VPS%E4%B8%8A%E6%90%AD%E5%BB%BAshadowsocks%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html
+环境VPS系统为debian-8.0-x86_64">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo整体备份到GitHub">
-<meta property="og:url" content="https://dalbaragi.site/2016/11/20/Hexo整体备份到GitHub/index.html">
+<meta property="og:title" content="vps上建立ss服务器">
+<meta property="og:url" content="https://dalbaragi.site/2016/12/27/vps上建立ss服务器/index.html">
 <meta property="og:site_name" content="Dalbaragi Notes">
-<meta property="og:description" content="通过hexo deploy部署到GitHub时，只会将public文件夹中生成的html文件上传至GitHub仓库，并不会备份配置文件、markdown文件等。下面的工作是为了将Hexo文件夹整个备份到GitHub中。
-
-参考备份 Hexo 源文件至 GitHub
-前提已经将hexo部署到了dalbragi.github.io。
-步骤初始化git在Hexo根目录下执行
-git init">
-<meta property="og:updated_time" content="2016-11-20T05:36:14.721Z">
+<meta property="og:description" content="参考[在VPS上搭建shadowsocks来科学上网](http://www.waynechu.cn/shadowsocks/2016/08/14/%E5%9C%A8VPS%E4%B8%8A%E6%90%AD%E5%BB%BAshadowsocks%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html
+环境VPS系统为debian-8.0-x86_64">
+<meta property="og:updated_time" content="2016-12-27T01:35:19.622Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo整体备份到GitHub">
-<meta name="twitter:description" content="通过hexo deploy部署到GitHub时，只会将public文件夹中生成的html文件上传至GitHub仓库，并不会备份配置文件、markdown文件等。下面的工作是为了将Hexo文件夹整个备份到GitHub中。
-
-参考备份 Hexo 源文件至 GitHub
-前提已经将hexo部署到了dalbragi.github.io。
-步骤初始化git在Hexo根目录下执行
-git init">
+<meta name="twitter:title" content="vps上建立ss服务器">
+<meta name="twitter:description" content="参考[在VPS上搭建shadowsocks来科学上网](http://www.waynechu.cn/shadowsocks/2016/08/14/%E5%9C%A8VPS%E4%B8%8A%E6%90%AD%E5%BB%BAshadowsocks%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html
+环境VPS系统为debian-8.0-x86_64">
 
 
 
@@ -126,7 +114,7 @@ git init">
   };
 </script>
 
-  <title> Hexo整体备份到GitHub | Dalbaragi Notes </title>
+  <title> vps上建立ss服务器 | Dalbaragi Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -256,7 +244,7 @@ git init">
             
             
               
-                Hexo整体备份到GitHub
+                vps上建立ss服务器
               
             
           </h1>
@@ -268,8 +256,8 @@ git init">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-20T12:44:09+08:00" content="2016-11-20">
-              2016-11-20
+            <time itemprop="dateCreated" datetime="2016-12-27T09:24:30+08:00" content="2016-12-27">
+              2016-12-27
             </time>
           </span>
 
@@ -282,8 +270,8 @@ git init">
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/ss/" itemprop="url" rel="index">
+                    <span itemprop="name">ss</span>
                   </a>
                 </span>
 
@@ -315,23 +303,12 @@ git init">
       
 
       
-        <blockquote>
-<p>通过hexo deploy部署到GitHub时，只会将public文件夹中生成的html文件上传至GitHub仓库，并不会备份配置文件、markdown文件等。下面的工作是为了将Hexo文件夹整个备份到GitHub中。</p>
-</blockquote>
-<p>参考<a href="http://www.leyar.me/backup-your-blog-to-github/" target="_blank" rel="external">备份 Hexo 源文件至 GitHub</a></p>
-<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>已经将hexo部署到了dalbragi.github.io。</p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="初始化git"><a href="#初始化git" class="headerlink" title="初始化git"></a>初始化git</h3><p>在Hexo根目录下执行</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="创建并切换分支"><a href="#创建并切换分支" class="headerlink" title="创建并切换分支"></a>创建并切换分支</h3><p>在Hexo根目录下执行<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git checkout -b hexo</div></pre></td></tr></table></figure></p>
-<h3 id="添加README"><a href="#添加README" class="headerlink" title="添加README"></a>添加README</h3><p>根目录下创建README.md，并添加。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git add README.md</div></pre></td></tr></table></figure>
-<h3 id="创建忽略文件"><a href="#创建忽略文件" class="headerlink" title="创建忽略文件"></a>创建忽略文件</h3><p>根目录下创建<code>.gitignore</code>，添加忽略的内容。</p>
-<p>在这里，只添加了<code>public/</code>，因为已经提交到了master分支下，其他部分可以按需选择备份。</p>
-<h3 id="添加内容到仓库并提交到远程仓库"><a href="#添加内容到仓库并提交到远程仓库" class="headerlink" title="添加内容到仓库并提交到远程仓库"></a>添加内容到仓库并提交到远程仓库</h3><h4 id="第一次提交："><a href="#第一次提交：" class="headerlink" title="第一次提交："></a>第一次提交：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &quot;说明内容&quot;</div><div class="line">git remote add origin git@github.com:dalbaragi/dalbaragi.github.io  #地址关联到自己的仓库</div><div class="line">git push -u origin hexo</div></pre></td></tr></table></figure>
-<p><strong><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000" target="_blank" rel="external">-u选项说明:</a></strong><br>由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
-<h4 id="之后提交："><a href="#之后提交：" class="headerlink" title="之后提交："></a>之后提交：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &quot;说明内容&quot;</div><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
-<h4 id="一些说明"><a href="#一些说明" class="headerlink" title="一些说明"></a>一些说明</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git add -A  #stages ALL</div><div class="line">git add .   #stages new and modified, without deleted</div><div class="line">git add -u  #stages modified and deleted, without new</div></pre></td></tr></table></figure>
+        <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>[在VPS上搭建shadowsocks来科学上网](<a href="http://www.waynechu.cn/shadowsocks/2016/08/14/%E5%9C%A8VPS%E4%B8%8A%E6%90%AD%E5%BB%BAshadowsocks%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html" target="_blank" rel="external">http://www.waynechu.cn/shadowsocks/2016/08/14/%E5%9C%A8VPS%E4%B8%8A%E6%90%AD%E5%BB%BAshadowsocks%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html</a></p>
+<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p>VPS系统为debian-8.0-x86_64-minimal</p>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="安装pip包管理工具"><a href="#安装pip包管理工具" class="headerlink" title="安装pip包管理工具"></a>安装pip包管理工具</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">apt-get install python-pip</div><div class="line">pip install shadowsocks</div></pre></td></tr></table></figure>
+<h4 id="配置shadowsocks服务"><a href="#配置shadowsocks服务" class="headerlink" title="配置shadowsocks服务"></a>配置shadowsocks服务</h4><p>新建配置文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">vim /etc/shadowsocks.json</div></pre></td></tr></table></figure></p>
+<p>编辑为如下内容<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;vps的IP地址&quot;,</div><div class="line">    &quot;server_port&quot;:9898,   #自定义shadowsocks端口号</div><div class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;password&quot;:&quot;password&quot;,  #自定义密码</div><div class="line">    &quot;timeout&quot;:300,</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;  #加密方式</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="启动shadowsocks服务"><a href="#启动shadowsocks服务" class="headerlink" title="启动shadowsocks服务"></a>启动shadowsocks服务</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ssserver -c /etc/shadowsocks.json -d start</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -353,7 +330,9 @@ git init">
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
+            <a href="/tags/ss/" rel="tag">#ss</a>
+          
+            <a href="/tags/vps/" rel="tag">#vps</a>
           
         </div>
       
@@ -362,17 +341,13 @@ git init">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/13/Hexo配置/" rel="next" title="Hexo配置">
-                <i class="fa fa-chevron-left"></i> Hexo配置
+              <a href="/2016/12/27/ssh使用相关/" rel="next" title="ssh使用相关">
+                <i class="fa fa-chevron-left"></i> ssh使用相关
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/20/VIM使用及配置/" rel="prev" title="VIM使用及配置">
-                VIM使用及配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -486,7 +461,7 @@ git init">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前提"><span class="nav-number">1.</span> <span class="nav-text">前提</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化git"><span class="nav-number">2.1.</span> <span class="nav-text">初始化git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建并切换分支"><span class="nav-number">2.2.</span> <span class="nav-text">创建并切换分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加README"><span class="nav-number">2.3.</span> <span class="nav-text">添加README</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建忽略文件"><span class="nav-number">2.4.</span> <span class="nav-text">创建忽略文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加内容到仓库并提交到远程仓库"><span class="nav-number">2.5.</span> <span class="nav-text">添加内容到仓库并提交到远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一次提交："><span class="nav-number">2.5.1.</span> <span class="nav-text">第一次提交：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#之后提交："><span class="nav-number">2.5.2.</span> <span class="nav-text">之后提交：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一些说明"><span class="nav-number">2.5.3.</span> <span class="nav-text">一些说明</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">1.</span> <span class="nav-text">参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境"><span class="nav-number">2.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装步骤"><span class="nav-number">3.</span> <span class="nav-text">安装步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装pip包管理工具"><span class="nav-number">3.1.</span> <span class="nav-text">安装pip包管理工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置shadowsocks服务"><span class="nav-number">3.2.</span> <span class="nav-text">配置shadowsocks服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动shadowsocks服务"><span class="nav-number">3.3.</span> <span class="nav-text">启动shadowsocks服务</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
